@@ -17,14 +17,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartThings">
-        <activity android:name=".GarageActivity"></activity>
-
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity android:name=".GarageActivity" />
         <activity android:name=".util.PowerActivity" />
         <activity
             android:name=".TempsActivity"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
